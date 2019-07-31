@@ -752,7 +752,7 @@ ul.res {
 }
 
 .recruite form .field {
-  flex-basis: 48%;
+  flex-basis: 49%;
   margin-bottom: 10px;
 }
 
@@ -775,7 +775,31 @@ ul.res {
 .recruite form .field input, .recruite form .field select {
   width: 100%;
   border-radius: 0;
-  border: 1px solid #CCC;
+  border: 1px solid #efefef;
+  background-color: #fafafa;
+}
+
+.recruite form .field input:focus, .recruite form .field select:focus{
+  box-shadow: none;
+}
+
+form button{
+  background-color: #5b5b5b;
+  border: 0;
+  color: #FFF;
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  width: 120px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+form button:hover{
+  transform: translateY(3px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 footer {
