@@ -1,9 +1,7 @@
 $(function() {
 
-  $(function () {
-    $(".icon").click(function () {
-      $(this).toggleClass("active")
-    });
+  $(".icon").click(function () {
+    $(this).toggleClass("active")
   });
 
   // Search
@@ -11,7 +9,7 @@ $(function() {
     $(".xtr form").toggleClass("open");
   });
 
-  $(".xtr form").on("click", function() {
+  $(".xtr form, .xtr form > i").on("click", function() {
     $(this).removeClass("open");
   });
 

@@ -72,7 +72,7 @@ body{
 }
 
 .navBar .navCon .links .xtr form.open button {
-    right: 0;
+    right: 15px;
     left: unset;
     margin-right: 10px;
     margin-left: unset;

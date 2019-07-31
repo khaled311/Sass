@@ -2,6 +2,7 @@ body {
   font-family: 'frt', sans-serif;
   direction: rtl;
   text-align: right;
+  background-color: #fafafa;
 }
 
 * {
@@ -104,10 +105,17 @@ ul.res {
   justify-content: center;
   width: 30px;
   height: 30px;
-  background-color: #84848445;
-  color: #FFF;
+  background-color: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  color: #686868;
   font-size: 15px;
+  transition: .5s;
 }
+
+/* .sideNav .opt .lang a:hover{
+  background-color: #a41c23;
+  color: #FFF;
+} */
 
 .sideNav .opt .xtr {
   position: relative;
@@ -126,12 +134,22 @@ ul.res {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #84848445;
+  background-color: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: .5s;
 }
 
-.sideNav .opt .xtr .srch i {
+/* .sideNav .opt .xtr .srch:hover{
+  background-color: #a41c23;
+}
+
+.sideNav .opt .xtr .srch:hover i{
   color: #FFF;
+} */
+
+.sideNav .opt .xtr .srch i {
+  color: #686868;
   font-size: 15px;
   transition: .5s;
 }
@@ -145,12 +163,20 @@ ul.res {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(51,51,51, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: .5s;
   display: none;
+}
+
+.sideNav .opt .xtr form > i{
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+  color: #c5c5c5;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -180,6 +206,7 @@ ul.res {
 
 .sideNav .opt .xtr form .cont {
   position: relative;
+  top: -15%;
 }
 
 .sideNav .opt .xtr form button {
@@ -190,7 +217,8 @@ ul.res {
 }
 
 .sideNav .opt .xtr form button i {
-  font-size: 14px;
+  font-size: 20px;
+  color: #686868;
 }
 
 .sideNav .opt .xtr form input {
@@ -343,7 +371,7 @@ ul.res {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #FFF;
+  background-color: #fafafa;
   box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
   transition: .5s;
 }
@@ -387,17 +415,23 @@ ul.res {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2); */
   display: none;
 }
 
 @media (max-width: 991px) {
   .navBar .navCon .logo .icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.navBar .navCon .logo .icon.active .hamburger {
+.navBar .navCon .logo .icon i{
+  font-size: 30px;
+}
+
+/* .navBar .navCon .logo .icon.active .hamburger {
   background: transparent;
   box-shadow: none;
 }
@@ -438,7 +472,7 @@ ul.res {
 
 .navBar .navCon .logo .icon .hamburger:after {
   top: -10px;
-}
+} */
 
 .navBar .navCon .links {
   display: flex;
@@ -609,9 +643,17 @@ ul.res {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(51, 51, 51, .95);
   transition: .5s;
   z-index: 9;
+}
+
+.navBar .navCon .links .xtr form > i{
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+  color: #c5c5c5;
+  cursor: pointer;
 }
 
 .navBar .navCon .links .xtr form.open {
@@ -621,7 +663,7 @@ ul.res {
 
 .navBar .navCon .links .xtr form.open button {
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 50%;
   transform: translateY(-45%);
   margin-left: 10px;
@@ -635,6 +677,7 @@ ul.res {
 
 .navBar .navCon .links .xtr form .cont {
   position: relative;
+  top: -15%;
   width: 50%;
 }
 
@@ -646,7 +689,7 @@ ul.res {
 }
 
 .navBar .navCon .links .xtr form button i {
-  font-size: 16px;
+  font-size: 23px;
 }
 
 .navBar .navCon .links .xtr form input {
@@ -705,6 +748,7 @@ ul.res {
 .headerSlider a .content h2 {
   font-family: "frtBlk";
   font-size: 48px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -1051,12 +1095,13 @@ ul.res {
   width: 32px;
   border-radius: 0;
   height: 2px;
-  background-color: #a4a4a4;
+  background-color: #a6a6a6;
+  margin: 0 2px;
   transition: .5s;
 }
 
 .services .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #a2171e;
+  background-color: #a41c23;
 }
 
 .clients {
@@ -1163,7 +1208,7 @@ ul.res {
 
 .clients .swiper-slide a img {
   opacity: .5;
-  filter: grayscale(0.8);
+  filter: grayscale(100%);
   transition: .5s;
 }
 
@@ -1209,7 +1254,8 @@ ul.res {
   width: 32px;
   border-radius: 0;
   height: 2px;
-  background-color: #a4a4a4;
+  background-color: #a8a8a8;
+  margin: 0 2px;
   transition: .5s;
 }
 
