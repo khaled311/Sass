@@ -75,6 +75,7 @@ ul.res {
 }
 
 .sideNav {
+  padding: 24px;
   position: fixed;
   top: 0;
   right: -100%;
@@ -91,27 +92,27 @@ ul.res {
 }
 
 .sideNav .opt {
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .sideNav .opt .lang a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
-  background-color: #6868689c;
+  width: 30px;
+  height: 30px;
+  background-color: #84848445;
   color: #FFF;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .sideNav .opt .xtr {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,12 +126,13 @@ ul.res {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6868689c;
+  background-color: #84848445;
   cursor: pointer;
 }
 
 .sideNav .opt .xtr .srch i {
   color: #FFF;
+  font-size: 15px;
   transition: .5s;
 }
 
@@ -203,7 +205,7 @@ ul.res {
 
 .sideNav .opt .close1 {
   font-size: 20px;
-  color: #6868689c;
+  color: #84848445;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -222,9 +224,7 @@ ul.res {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  width: 290px;
   overflow: auto;
-  padding: 0px 25px 0;
 }
 
 .sideNav .links .list > li {
@@ -235,8 +235,9 @@ ul.res {
 .sideNav .links .list > li a {
   width: 100%;
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   color: #686868;
+  line-height: 1.6;
   transition: .5s;
 }
 
@@ -271,6 +272,7 @@ ul.res {
   left: 13px;
   transform: rotate(90deg);
   font-size: 11px;
+  color: #686868;
   transition: .5s;
 }
 
@@ -340,7 +342,7 @@ ul.res {
   padding: 15px 0;
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 999;
   background-color: #FFF;
   box-shadow: 0px 0px 10px 0px rgba(22, 22, 22, 0.1);
   transition: .5s;
@@ -385,6 +387,7 @@ ul.res {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   display: none;
 }
 
@@ -417,7 +420,6 @@ ul.res {
   width: 30px;
   height: 2px;
   background: #686868;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   transition: .5s;
 }
 
@@ -427,7 +429,6 @@ ul.res {
   width: 30px;
   height: 2px;
   background: #686868;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   transition: .5s;
 }
 
@@ -578,6 +579,7 @@ ul.res {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
   transition: .5s;
 }
 
@@ -590,7 +592,7 @@ ul.res {
 }
 
 .navBar .navCon .links .xtr .srch {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .navBar .navCon .links .xtr form {
@@ -633,6 +635,7 @@ ul.res {
 
 .navBar .navCon .links .xtr form .cont {
   position: relative;
+  width: 50%;
 }
 
 .navBar .navCon .links .xtr form button {
@@ -643,28 +646,28 @@ ul.res {
 }
 
 .navBar .navCon .links .xtr form button i {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navBar .navCon .links .xtr form input {
   border: 0;
   border-radius: 100px;
-  width: 300px;
+  width: 100%;
   height: 45px;
   padding: 0 25px;
   background-color: #FFF;
   display: none;
 }
 
-.fSlider a {
+.headerSlider a {
   position: relative;
 }
 
-.fSlider a img {
+.headerSlider a img {
   width: 100%;
 }
 
-.fSlider a .content {
+.headerSlider a .content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -672,19 +675,19 @@ ul.res {
 }
 
 @media (min-width: 992px) {
-  .fSlider a .content {
+  .headerSlider a .content {
     right: 80px;
   }
 }
 
 @media (min-width: 1200px) {
-  .fSlider a .content {
+  .headerSlider a .content {
     right: 130px;
   }
 }
 
 @media (max-width: 991px) {
-  .fSlider a .content {
+  .headerSlider a .content {
     right: 50%;
     transform: translate(50%, -50%);
     width: max-content;
@@ -692,74 +695,74 @@ ul.res {
 }
 
 @media (max-width: 767px) {
-  .fSlider a .content {
+  .headerSlider a .content {
     right: 50%;
     transform: translate(50%, -50%);
     width: max-content;
   }
 }
 
-.fSlider a .content h2 {
+.headerSlider a .content h2 {
   font-family: "frtBlk";
   font-size: 48px;
 }
 
 @media (max-width: 991px) {
-  .fSlider a .content h2 {
+  .headerSlider a .content h2 {
     font-size: 40px;
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
-  .fSlider a .content h2 {
+  .headerSlider a .content h2 {
     font-size: 35px;
   }
 }
 
 @media (max-width: 480px) {
-  .fSlider a .content h2 {
+  .headerSlider a .content h2 {
     font-size: 30px;
   }
 }
 
 @media (max-width: 375px) {
-  .fSlider a .content h2 {
+  .headerSlider a .content h2 {
     font-size: 25px;
   }
 }
 
-.fSlider a .content p {
+.headerSlider a .content p {
   font-family: "frtLight";
   font-size: 48px;
 }
 
 @media (max-width: 991px) {
-  .fSlider a .content p {
+  .headerSlider a .content p {
     font-size: 40px;
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
-  .fSlider a .content p {
+  .headerSlider a .content p {
     font-size: 35px;
   }
 }
 
 @media (max-width: 480px) {
-  .fSlider a .content p {
+  .headerSlider a .content p {
     font-size: 30px;
   }
 }
 
 @media (max-width: 375px) {
-  .fSlider a .content p {
+  .headerSlider a .content p {
     font-size: 25px;
   }
 }
 
-.fSlider .swiper-pagination {
+.headerSlider .swiper-pagination {
   bottom: 105px;
   display: flex;
   justify-content: flex-start;
@@ -767,7 +770,7 @@ ul.res {
 }
 
 @media (max-width: 991px) {
-  .fSlider .swiper-pagination {
+  .headerSlider .swiper-pagination {
     bottom: 15px;
     display: flex;
     justify-content: center;
@@ -775,7 +778,7 @@ ul.res {
   }
 }
 
-.fSlider .swiper-pagination .swiper-pagination-bullet {
+.headerSlider .swiper-pagination .swiper-pagination-bullet {
   width: 32px;
   border-radius: 0;
   height: 2px;
@@ -783,7 +786,7 @@ ul.res {
   transition: .5s;
 }
 
-.fSlider .swiper-pagination .swiper-pagination-bullet-active {
+.headerSlider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: white;
 }
 
@@ -791,7 +794,13 @@ ul.res {
   margin: 40px 0;
 }
 
-.overview .container {
+@media (max-width: 991px) {
+  .overview {
+    margin: 50px 0;
+  }
+}
+
+.overview .inner {
   border-radius: 30px;
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -799,7 +808,7 @@ ul.res {
 }
 
 @media (max-width: 767px) {
-  .overview .container {
+  .overview .inner {
     padding: 20px;
   }
 }
@@ -959,7 +968,7 @@ ul.res {
   margin: 40px 0;
 }
 
-.services .container {
+.services .inner {
   border-radius: 30px;
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -970,7 +979,7 @@ ul.res {
 }
 
 @media (max-width: 767px) {
-  .services .container {
+  .services .inner {
     padding: 1px 35px 15px;
   }
 }
@@ -998,6 +1007,20 @@ ul.res {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.services .swiper-slide a .pic {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.services .swiper-slide a .pic img {
+  transition: .5s;
+  backface-visibility: hidden;
+}
+
+.services .swiper-slide a:hover img {
+  transform: scale(1.05);
 }
 
 .services .swiper-slide a:hover p {
@@ -1033,14 +1056,20 @@ ul.res {
 }
 
 .services .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #a41c23;
+  background-color: #a2171e;
 }
 
 .clients {
   margin-bottom: 45px;
 }
 
-.clients .container {
+@media (max-width: 991px) {
+  .clients {
+    margin-bottom: 50px;
+  }
+}
+
+.clients .inner {
   border-radius: 30px;
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1048,7 +1077,7 @@ ul.res {
 }
 
 @media (max-width: 767px) {
-  .clients .container {
+  .clients .inner {
     padding: 30px;
   }
 }
@@ -1123,6 +1152,7 @@ ul.res {
 
 .clients .swiper-slide a:hover img {
   opacity: 1;
+  filter: unset;
 }
 
 .clients .swiper-slide a:hover p {
@@ -1133,6 +1163,7 @@ ul.res {
 
 .clients .swiper-slide a img {
   opacity: .5;
+  filter: grayscale(0.8);
   transition: .5s;
 }
 
@@ -1183,7 +1214,7 @@ ul.res {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #a41c23;
+  background-color: #a2171e;
 }
 
 footer {
@@ -1261,8 +1292,12 @@ footer .details h3 {
   font-family: "frtBold";
 }
 
+footer .details h3 + p {
+  margin-bottom: 0;
+}
+
 footer .details a {
-  font-size: 17px;
+  font-size: 15px;
   font-family: "frtLight";
   margin-bottom: 0;
   color: currentColor;

@@ -29,11 +29,11 @@ $(function() {
   });
 
   // Firts Slider
-  var swiper = new Swiper('.fSlider .swiper-container', {
+  var swiper = new Swiper('.headerSlider .swiper-container', {
     loop: true,
     autoplay: true,
     pagination: {
-      el: '.fSlider .swiper-pagination',
+      el: '.headerSlider .swiper-pagination',
       clickable: true
     },
   });
