@@ -116,8 +116,8 @@ $(function() {
   $(".drop").on("click", function(e) {
       $(this).find(".subMenu").slideToggle();
       $(this).siblings().find(".subMenu").slideUp();
-      $(this).find(".ar").toggleClass("open");
-      $(this).siblings().find(".ar").removeClass("open");
+      $(this).toggleClass("open");
+      $(this).siblings().removeClass("open");
       e.stopPropagation();
   });
 

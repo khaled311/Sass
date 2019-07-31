@@ -284,6 +284,24 @@ ul.res {
   position: relative;
 }
 
+.sideNav .links .drop span{
+  position: relative;
+}
+
+.sideNav .links .drop span:before {
+  content: "\f053";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color: #000;
+  font-size: 9px;
+  transition: .5s;
+}
+
 .sideNav .links .drop span {
   font-size: 16px;
   color: #686868;
@@ -294,18 +312,8 @@ ul.res {
   color: #000;
 }
 
-.sideNav .links .drop .ar {
-  position: absolute;
-  top: 13px;
-  left: 13px;
-  transform: rotate(90deg);
-  font-size: 11px;
-  color: #686868;
-  transition: .5s;
-}
-
-.sideNav .links .drop .ar.open {
-  transform: rotate(0deg);
+.sideNav .links .drop.open span:before {
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 .sideNav .links .drop .subMenu {
