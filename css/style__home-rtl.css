@@ -163,7 +163,7 @@ ul.res {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(51,51,51, 0.95);
+  background-color: rgba(103, 103, 103, .95);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -643,7 +643,7 @@ ul.res {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, .95);
+  background-color: rgba(103, 103, 103, .95);
   transition: .5s;
   z-index: 9;
 }
@@ -696,7 +696,7 @@ ul.res {
   border: 0;
   border-radius: 100px;
   width: 100%;
-  height: 45px;
+  height: 60px;
   padding: 0 25px;
   background-color: #FFF;
   display: none;
