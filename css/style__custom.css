@@ -84,20 +84,20 @@ body{
 }
 
 @media (min-width: 992px){
-    .fSlider a .content {
+    .headerSlider a .content {
         left: 80px;
         right: unset;
     }
 }
 
 @media (min-width: 1200px){
-    .fSlider a .content {
+    .headerSlider a .content {
         left: 130px;
         right: unset
     }
 }
 
-.fSlider .swiper-pagination {
+.headerSlider .swiper-pagination {
     bottom: 105px;
     display: flex;
     justify-content: flex-start;
@@ -106,14 +106,14 @@ body{
 }
 
 /* @media (max-width: 991px){
-    .fSlider a .content {
+    .headerSlider a .content {
         left: 50px;
         right: unset;
     }
 } */
 
 @media (max-width: 991px){
-    .fSlider .swiper-pagination {
+    .headerSlider .swiper-pagination {
         bottom: 15px;
         display: flex;
         justify-content: center;
